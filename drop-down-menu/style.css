@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* The destination of the object animated should be in the changed class, like the two below */
+
+.visible {
+    transform: translate(0, 0);
+}
+
+.hidden {
+    transform: translate(0, -250px);
+}
+
+#btn {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    border: 5px solid rgb(176, 176, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: purple;
+    position: relative;
+    z-index: 2;
+}
+
+#btn:hover {
+    background-color: rgb(134, 211, 236);
+}
+
+#btn:active {
+    background-color: rgb(215, 245, 255);
+}
+
+/* The animation must always be in the object itself, just waiting for  */
+
+#items {
+    transition: transform 400ms ease-in-out;
+    list-style-type: none;
+    text-decoration: none;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(230, 249, 255);
+    border: 1px solid rgb(176, 176, 255);;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+#items li {
+    padding: 5px;
+}
