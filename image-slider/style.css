@@ -28,6 +28,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 #carousel {
@@ -37,25 +38,31 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+}
+
+#dots {
+    background-color: black;
+    padding: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .dots {
     margin: 5px 10px;
-    border-radius: 30px;
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background-color: grey;
+    box-shadow: 1px 1px 1px white;
+    border-radius: 5px;
 }
 
 .buttons {
     cursor: pointer;
-    background-color: steelblue;
+    background-color: black;
     border: 1px solid black;
     color: white;
     width: 50px;
     height: 50px;
-    margin: 5px;
 }
 
 .buttons:hover {
@@ -63,7 +70,7 @@ img {
 }
 
 .buttons:active {
-    background-color: rgb(243, 198, 198);
+    background-color: rgb(146, 146, 146);
 }
 
 .previous {
